@@ -1,0 +1,23 @@
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+}
+
+body {
+    background: repeating-linear-gradient(to right, rgb(199, 243, 55), rgb(25, 252, 74) 10%, rgb(233, 126, 25) 33%, rgb(187, 19, 7) 40%);
+}
+
+.label {
+    font-weight: bold;
+}
+
+.create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
