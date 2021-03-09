@@ -1,23 +1,116 @@
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
+    margin-bottom: 5px;
+    color: white;
+    list-style-type: none;
+}
+
+h1 {
+    color: rgb(238, 255, 0);
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 120px;
+}
+
+h3 {
+    color: yellow;
+    font-size: 40px;
+}
+
+.burger-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+.burgers {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 15%;
+    justify-content: flex-start;
+}
+
+.burger-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#add-burger {
+    font-size: 20px;
+    padding: 4px;
+    width: 100%;
+}
+
+.burger-item p {
+    font-size: 25px;
 }
 
 body {
-    background: repeating-linear-gradient(to right, rgb(199, 243, 55), rgb(25, 252, 74) 10%, rgb(233, 126, 25) 33%, rgb(187, 19, 7) 40%);
+    background: url(../images/Burger-fries.jpeg), linear-gradient(to right, yellow, red);
+    background-blend-mode: luminosity;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .label {
     font-weight: bold;
 }
 
+#create-form {
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
 .create-update-form {
     padding: 5px;
     margin: 5px;
     background: aqua;
+    color: yellow;
 }
 
 .form-group {
     margin-bottom: 5px;
+}
+
+.add-burger {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#burger-name {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.form-group {
+    font-size: 30px;
+}
+
+#devoured,
+#unedible {
+    font-size: 30px;
+}
+
+#devourBtn,
+#deleteBtn {
+    margin-left: 10px;
+    padding: 12px;
+    font-size: 18px;
+    background: yellow;
 }

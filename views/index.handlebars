@@ -1,45 +1,55 @@
 <h1>Burgers!</h1>
 
+<div class="burger-container">
+
+     
 <div class="burgers">
-
-        <h3 class="burgers-title">Burgers</h3>
-
-        <ul>
+       
+      <h3 class="burgers-title">Burgers</h3>  
+        
 
             {{#each burgers}}
             {{#unless this.devoured}}
-
-            <li class="list-of-burgers rounded">{{this.burger_name}} <button id="devourBtn" class="devourBtn btn-primary rounded"
-                    data-id="{{this.id}}">Devour</button></li>
+              <div class="burger-item">
+<p id="burger-name">{{this.burger_name}}</p>
+<button id="devourBtn" class="devourBtn btn-primary rounded"
+                    data-id="{{this.id}}">Devour</button>
+              </div>
+         
 
 
             {{/unless}}
             {{/each}}
-        </ul>
+        
     </div>
     <div class="burgers">
 
         <h3 class="burgers-title">Devoured Burgers</h3>
 
-        <ul>
+      
 
             {{#each burgers}}
             {{#if this.devoured}}
-
-            <li class="list-of-eaten-burgers">{{this.burger_name}}<button id="deleteBtn" class="deleteBtn btn-danger rounded"
-                    data-id="{{this.id}}">Delete</button></li>
+<div class="burger-item">
+  <p id="burger-name">{{this.burger_name}}</p>
+<button id="deleteBtn" class="deleteBtn btn-primary rounded"
+                    data-id="{{this.id}}">Devour</button>
+</div>
+            
 
 
             {{/if}}
             {{/each}}
 
-        </ul>
+        
 
     </div>
 
-<h2>Add a burger</h2>
-<form id="create-form">
+</div>
+<div class ="add-burger" >
 
+<form id="create-form">
+<h2>Add a burger</h2>
   <div class="form-group">
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
@@ -53,3 +63,4 @@
 
   <button id= "add-burger" type="submit">Add Burger</button>
 </form>
+</div>
